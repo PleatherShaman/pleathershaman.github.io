@@ -489,7 +489,9 @@ hr {
   }
   #showcase {
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
+      padding-left:10px;
+      padding-right:10px
     }
   }
 
@@ -511,6 +513,28 @@ hr {
   }
 }
 
+@media only screen and (max-width: 650px) {
+  #showcase {
+    h1 {
+      width:100%;
+      font-size: 2.5rem;
+      padding-left:10px;
+      padding-right:10px
+    }
+    h2{
+      width:100%;
+      font-size: 1.5rem;
+      padding-left:10px;
+      padding-right:10px
+    }
+    h3{
+      width:100%;
+      font-size: 1rem;
+      padding-left:10px;
+      padding-right:10px
+    }  }
+
+}
 @media only screen and (max-width: 1050px) {
   hr {
     width: 80%;
@@ -623,22 +647,26 @@ hr {
 
 @media only screen and (max-height: 550px) {
   
+  #navigation{
+    position: static
+  }
+
   #showcase .container{
-    margin-top:90px;
-    justify-content: flex-start
+    
+    justify-content: center;
+    
   }
   #showcase h1{
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 2rem
   }
 
   #showcase h3{
         padding: 2rem
   }
-}
 
-@media only screen and (max-height: 450px) {
   #showcase{
-    height:120vh
+    height:130vh
   }
 }
+
