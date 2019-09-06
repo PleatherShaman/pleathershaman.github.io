@@ -482,6 +482,6 @@ hr {
 
   #showcase h3 {
     padding: 2rem; } }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 450px) {
   #showcase {
     height: 120vh; } }
