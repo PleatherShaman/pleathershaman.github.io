@@ -620,3 +620,25 @@ hr {
     }
   }
 }
+
+@media only screen and (max-height: 550px) {
+  
+  #showcase .container{
+    margin-top:90px;
+    justify-content: flex-start
+  }
+  #showcase h1{
+    font-size: 3rem;
+    padding: 2rem
+  }
+
+  #showcase h3{
+        padding: 2rem
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  #showcase{
+    height:120vh
+  }
+}
