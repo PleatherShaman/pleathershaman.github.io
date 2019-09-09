@@ -11,13 +11,15 @@ $secondary-overlay: rgba(166, 70, 50, 0.7);
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body,
 html {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: "Lato", sans-serif;
+  // font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -69,7 +71,7 @@ p {
   margin: 1rem 0;
   padding: 0;
   text-align: center;
-  font-family: "noto";
+  // font-family: "noto";
   font-size: 1.2rem;
 }
 
@@ -235,7 +237,7 @@ hr {
     width: 80%;
     padding: 2rem;
     font-weight: 400;
-    font-family: "noto";
+    font-family: 'Noto';
     font-style: italic;
   }
 
@@ -277,7 +279,8 @@ hr {
 
 #kitchenCatalogue,
 #colorPickerApp,
-#inspirationMontage {
+#inspirationMontage,
+#AnBot {
   width: 100;
   background: white;
   padding-bottom: 2rem;
@@ -289,11 +292,14 @@ hr {
     align-items: center;
   }
   h3 {
-    padding: 2rem;
+    padding: 1rem;
+    margin-top: 3rem
   }
 
   p {
     margin: 1rem 0;
+    text-align:left;
+    width:100%
   }
 
   img {
@@ -342,6 +348,10 @@ hr {
   }
 }
 
+#AnBot img{
+  max-width:600px
+}
+
 #educationItem {
   background: white;
   padding: 4rem 0 3rem 0;
@@ -381,7 +391,7 @@ hr {
   ul {
     text-align: left;
     font-size: 1.2rem;
-    font-family: "noto";
+    // font-family: 'Roboto', sans-serif;
 
     li {
       padding: 0.5rem 0;
