@@ -11,7 +11,7 @@ $secondary-overlay: rgba(166, 70, 50, 0.7);
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body,
 html {
@@ -19,7 +19,7 @@ html {
   padding: 0;
   font-size: 16px;
   // font-family: 'Noto Sans', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -71,7 +71,6 @@ p {
   margin: 1rem 0;
   padding: 0;
   text-align: center;
-  // font-family: "noto";
   font-size: 1.2rem;
 }
 
@@ -103,7 +102,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-
 hr {
   width: 500px;
   background: none;
@@ -117,9 +115,7 @@ hr {
   width: 100%;
   z-index: 100;
   box-shadow: 2px 2px 5px $primary;
-
 }
-
 
 .brand {
   position: absolute;
@@ -159,9 +155,8 @@ hr {
         text-decoration: none;
         transition: all 0.4s;
 
-        &:hover {          
+        &:hover {
           color: $primary;
-          
         }
       }
     }
@@ -204,7 +199,7 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   // background-size: 100% ;
-   
+
   height: 100vh;
   padding-top: $nav-height;
   box-sizing: border-box;
@@ -237,16 +232,16 @@ hr {
     width: 80%;
     padding: 2rem;
     font-weight: 400;
-    font-family: 'Noto';
+    font-family: "Noto";
     font-style: italic;
   }
 
-  .showcaseContact i{
+  .showcaseContact i {
     transform: scale(2);
-    margin: 0.5rem 1.5rem 0 1.5rem
+    margin: 0.5rem 1.5rem 0 1.5rem;
   }
-  .showcaseContact i:hover{
-    color: $secondary
+  .showcaseContact i:hover {
+    color: $secondary;
   }
 }
 
@@ -272,7 +267,7 @@ hr {
 
   p {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: justify;
     padding-bottom: 1.5rem;
   }
 }
@@ -293,18 +288,22 @@ hr {
   }
   h3 {
     padding: 1rem;
-    margin-top: 3rem
+    margin-top: 3rem;
   }
 
   p {
     margin: 1rem 0;
-    text-align:left;
-    width:100%
+    text-align: justify;
+    width: 100%;
   }
 
   img {
     width: 100%;
   }
+}
+
+#AnBot img {
+  max-width: 600px;
 }
 
 #skillsItem {
@@ -348,30 +347,6 @@ hr {
   }
 }
 
-#AnBot img{
-  max-width:600px
-}
-
-#educationItem {
-  background: white;
-  padding: 4rem 0 3rem 0;
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .educationItem {
-      width: 80%;
-      margin: 1rem;
-
-      h4 {
-        margin-top: 0.5rem;
-      }
-    }
-  }
-}
-
 #experienceItem {
   padding: 4rem 0 3rem 0;
   background: white;
@@ -387,11 +362,11 @@ hr {
 
   p {
     margin-top: 2rem;
+    text-align: justify;
   }
   ul {
     text-align: left;
     font-size: 1.2rem;
-    // font-family: 'Roboto', sans-serif;
 
     li {
       padding: 0.5rem 0;
@@ -400,6 +375,30 @@ hr {
     li:first-of-type {
       list-style: none;
       font-weight: bold;
+    }
+  }
+}
+#educationItem {
+  background: white;
+  padding: 4rem 0 3rem 0;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .educationItem {
+      width: 80%;
+      margin: 1rem;
+
+      h4 {
+        margin-top: 0.5rem;
+      }
+
+      p {
+        text-align: justify;
+      }
     }
   }
 }
@@ -472,27 +471,23 @@ hr {
         margin: auto 0;
         transition: all 0.2s ease-in-out;
       }
-      
     }
     .contactItem:hover {
       color: $primary;
     }
   }
- 
-  i{
-    transform: scale(1.5);}
-    
+
+  i {
+    transform: scale(1.5);
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  
-.educationItem{
-  width: 100% !important;
-  
-}
+  .educationItem {
+    width: 100% !important;
+  }
 
   .brand {
-   
     h3 {
       font-size: 2rem;
     }
@@ -500,8 +495,8 @@ hr {
   #showcase {
     h1 {
       font-size: 2.5rem;
-      padding-left:10px;
-      padding-right:10px
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 
@@ -526,24 +521,24 @@ hr {
 @media only screen and (max-width: 650px) {
   #showcase {
     h1 {
-      width:100%;
+      width: 100%;
       font-size: 2.5rem;
-      padding-left:10px;
-      padding-right:10px
+      padding-left: 10px;
+      padding-right: 10px;
     }
-    h2{
-      width:100%;
+    h2 {
+      width: 100%;
       font-size: 1.5rem;
-      padding-left:10px;
-      padding-right:10px
+      padding-left: 10px;
+      padding-right: 10px;
     }
-    h3{
-      width:100%;
+    h3 {
+      width: 100%;
       font-size: 1rem;
-      padding-left:10px;
-      padding-right:10px
-    }  }
-
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 @media only screen and (max-width: 1050px) {
   hr {
@@ -656,27 +651,23 @@ hr {
 }
 
 @media only screen and (max-height: 550px) {
-  
-  #navigation{
-    position: static
+  #navigation {
+    position: static;
   }
 
-  #showcase .container{
-    
+  #showcase .container {
     justify-content: center;
-    
   }
-  #showcase h1{
+  #showcase h1 {
     font-size: 2rem;
-    padding: 2rem
+    padding: 2rem;
   }
 
-  #showcase h3{
-        padding: 2rem
+  #showcase h3 {
+    padding: 2rem;
   }
 
-  #showcase{
-    height:130vh
+  #showcase {
+    height: 130vh;
   }
 }
-
